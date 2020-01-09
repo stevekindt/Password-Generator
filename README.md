@@ -3,4 +3,7 @@ The purpose of this application is to take user input of desired characters and 
 
 Password length and valid character types will be selected via user prompts. The password will be generated via a submit button event click.
 
+https://github.com/stevekindt/Password-Generator
+https://stevekindt.github.io/Password-Generator/
+
 REMEMBER TO INCLUDE SCREENSHOT OF FINISHED APPLICATION AND GITHUB URL!

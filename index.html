@@ -11,23 +11,30 @@
 </head>
 <body>
     <div class="container">
+
         <div class="row">
             
-        <div class="col-lg-8 col-sm-12">
-            
+        <div class="col-lg-8 col-sm-12 mx-auto">
+            <!-- Header is centered in its own row -->
             <div class="title">
                 <h1>Password Generator</h1>
             </div>
             
         </div>
+<!-- Main body content is centered in its own row -->
         <div class="row">
 
-            <div class="col-lg-8 col-sm-12">
+            <div class="col-lg-8 col-sm-12 mx-auto">
 
                 <div class="password-display">
                     <h4>Generate a Password</h4>
-                    <button type="submit">Generate Password</button>
-                    <button type="submit">Copy to Clipboard</button>
+                    <!-- Is the result area a <output> tag or something else? How to disply output from event listener? Is it a form? -->
+                    <div class="result-container">
+                        <span id="reult"></span>
+                    </div>
+                    <!-- Seperate buttons into two columns or style spacing differently inline? -->
+                    <button type="submit" id="generate">Generate Password</button>
+                    <button type="submit" id="copy">Copy to Clipboard</button>
                 </div>
 
             </div>

@@ -13,63 +13,57 @@
 
 <body>
     <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Password Generator</h1>
+        </div>
 
+        <!-- Main body content is centered in its own row -->
         <div class="row">
 
             <div class="col-lg-8 col-sm-12 mx-auto">
-                <!-- Header is centered in its own row -->
-                <div class="title">
-                    <h1><strong>Password Generator</strong></h1>
-                </div>
 
-            </div>
-            <!-- Main body content is centered in its own row -->
-            <div class="row">
-
-                <div class="col-lg-8 col-sm-12 mx-auto">
-
-                    <div class="password-display">
-                        <h4><strong>Generate a Password</strong></h4>
-                        <!-- Selector checkboxes for character types to include in password -->
-                        <div class="password-container">
-                            <textarea id="result"></textarea>
-                        </div>
-                        <div class="character-type">
-                            <div class="characters">
-                                <label>Password Length</label>
-                                <input type="number" id="length" min="8" max="128" value="8" />
-                            </div>
-                            <div class="characters">
-                                <label>Symbols</label>
-                                <input type="checkbox" id="symbols" checked />
-                            </div>
-                            <div class="characters">
-                                <label>Numbers</label>
-                                <input type="checkbox" id="numbers" checked />
-                            </div>
-                            <div class="characters">
-                                <label>Lowercase Letters</label>
-                                <input type="checkbox" id="lowercase" checked />
-                            </div>
-                            <div class="characters">
-                                <label>Uppercase Letters</label>
-                                <input type="checkbox" id="uppercase" checked />
-                            </div>
-                        </div>
-                        <!-- Seperate buttons into two columns or style spacing differently inline? -->
-                        <button onclick="getRandomNumber()" id="generate">Generate Password</button>
-                        <button type="submit" id="copy">Copy to Clipboard</button>
+                <div class="password-display">
+                    <h4><strong>Generate a Password</strong></h4>
+                    <!-- Selector checkboxes for character types to include in password -->
+                    <div class="password-container">
+                        <textarea id="result"></textarea>
                     </div>
-
+                    <div class="character-type">
+                        <div class="characters">
+                            <label>Password Length</label>
+                            <input type="number" id="length" min="8" max="128" value="8" />
+                        </div>
+                        <div class="characters">
+                            <label>Symbols</label>
+                            <input type="checkbox" id="symbols" checked />
+                        </div>
+                        <div class="characters">
+                            <label>Numbers</label>
+                            <input type="checkbox" id="numbers" checked />
+                        </div>
+                        <div class="characters">
+                            <label>Lowercase Letters</label>
+                            <input type="checkbox" id="lowercase" checked />
+                        </div>
+                        <div class="characters">
+                            <label>Uppercase Letters</label>
+                            <input type="checkbox" id="uppercase" checked />
+                        </div>
+                    </div>
+                    <!-- Seperate buttons into two columns or style spacing differently inline? -->
+                    <button onclick="getRandomNumber()" id="generate">Generate Password</button>
+                    <button type="submit" id="copy">Copy to Clipboard</button>
                 </div>
 
             </div>
 
         </div>
-        <script src="script.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -30,9 +30,31 @@
 
                     <div class="password-display">
                         <h4>Generate a Password</h4>
-                        <!-- Is the result area a <output> tag or something else? How to disply output from event listener? Is it a form? -->
+                        <!-- Selector checkboxes for character types to include in password -->
                         <div class="result-container">
-                            <span id="reult"></span>
+                            <span id="result"></span>
+                        </div>
+                        <div class="character-type">
+                            <div class="characters">
+                                <label>Password Length</label>
+                                <input type="number" id="length" min="8" max="128" value="8" />
+                            </div>
+                            <div class="characters">
+                                <label>Symbols</label>
+                                <input type="checkbox" id="symbols" checked />
+                            </div>
+                            <div class="characters">
+                                <label>Numbers</label>
+                                <input type="checkbox" id="numbers" checked />
+                            </div>
+                            <div class="characters">
+                                <label>Lowercase Letters</label>
+                                <input type="checkbox" id="lowercase" checked />
+                            </div>
+                            <div class="characters">
+                                <label>Uppercase Letters</label>
+                                <input type="checkbox" id="uppercase" checked />
+                            </div>
                         </div>
                         <!-- Seperate buttons into two columns or style spacing differently inline? -->
                         <button onclick="getRandomNumber()" id="generate">Generate Password</button>
@@ -45,6 +67,9 @@
 
         </div>
         <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

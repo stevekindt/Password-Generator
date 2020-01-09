@@ -2,28 +2,28 @@
 
 // Use confirm (Y/N) or prompt (if necessary) to allow user to choose character types
 
-let includeSpecials = confirm("Would you like to include special characters in your password?");
+// let includeSpecials = confirm("Would you like to include special characters in your password?");
 
-alert(includeSpecials);
+// alert(includeSpecials);
 
-let includeNumbers = confirm("Would you like to include numbers in your password?");
+// let includeNumbers = confirm("Would you like to include numbers in your password?");
 
-alert(includeNumbers);
+// alert(includeNumbers);
 
-let includeLowers = confirm("Would you like to include lowercase letters in your password?");
+// let includeLowers = confirm("Would you like to include lowercase letters in your password?");
 
-alert(includeLowers);
+// alert(includeLowers);
 
-let includeUppers = confirm("Would you like to include uppercase letters in your password?");
+// let includeUppers = confirm("Would you like to include uppercase letters in your password?");
 
-alert(includeUppers);
+// alert(includeUppers);
 
 
 
 // Random generator functions
 
 function getRandomNumber() {
-    const numbers = 0123456789;
+    const numbers = "0123456789";
     return numbers[Math.floor(Math.random() * numbers.length)];
 }
 

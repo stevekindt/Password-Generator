@@ -35,9 +35,19 @@ h2 {
     border: solid black 1px;
 }
 
-/* checking here
-.length {
+.characters {
     margin-right: 0;
+}
+
+.password-container #result {
+    word-wrap: break-word;
+}
+
+.characters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
 }
 
 

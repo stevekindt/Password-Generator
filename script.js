@@ -18,7 +18,7 @@
 
 // alert(includeUppers);
 
-
+alert("Choose which types of characters you'd like to include in your password. Your password must be between 8 and 128 characters.");
 
 // Random generator functions
 

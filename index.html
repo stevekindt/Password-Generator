@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +10,41 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
 
         <div class="row">
-            
-        <div class="col-lg-8 col-sm-12 mx-auto">
-            <!-- Header is centered in its own row -->
-            <div class="title">
-                <h1>Password Generator</h1>
-            </div>
-            
-        </div>
-<!-- Main body content is centered in its own row -->
-        <div class="row">
 
             <div class="col-lg-8 col-sm-12 mx-auto">
+                <!-- Header is centered in its own row -->
+                <div class="title">
+                    <h1>Password Generator</h1>
+                </div>
 
-                <div class="password-display">
-                    <h4>Generate a Password</h4>
-                    <!-- Is the result area a <output> tag or something else? How to disply output from event listener? Is it a form? -->
-                    <div class="result-container">
-                        <span id="reult"></span>
+            </div>
+            <!-- Main body content is centered in its own row -->
+            <div class="row">
+
+                <div class="col-lg-8 col-sm-12 mx-auto">
+
+                    <div class="password-display">
+                        <h4>Generate a Password</h4>
+                        <!-- Is the result area a <output> tag or something else? How to disply output from event listener? Is it a form? -->
+                        <div class="result-container">
+                            <span id="reult"></span>
+                        </div>
+                        <!-- Seperate buttons into two columns or style spacing differently inline? -->
+                        <button type="submit" id="generate">Generate Password</button>
+                        <button type="submit" id="copy">Copy to Clipboard</button>
                     </div>
-                    <!-- Seperate buttons into two columns or style spacing differently inline? -->
-                    <button type="submit" id="generate">Generate Password</button>
-                    <button type="submit" id="copy">Copy to Clipboard</button>
+
                 </div>
 
             </div>
 
         </div>
-
-    </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
+
 </html>

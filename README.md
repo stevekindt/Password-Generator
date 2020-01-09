@@ -3,4 +3,4 @@ The purpose of this application is to take user input of desired characters and 
 
 Password length and valid character types will be selected via user prompts. The password will be generated via a submit button event click.
 
-REMEMBER TO INCLUDE SCREENSHOT OF FINISHED APPLICATION!
+REMEMBER TO INCLUDE SCREENSHOT OF FINISHED APPLICATION AND GITHUB URL!

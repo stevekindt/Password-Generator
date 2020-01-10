@@ -30,13 +30,14 @@ const randomFunc = {
 // Event listener upon click to verify checked character types
 
 generate.addEventListener("click", () => {
+	
 	var length = +lengthEl.value;
 	var hasSymbol = symbolsEl.checked;
 	var hasNumber = numbersEl.checked;
 	var hasLower = lowercaseEl.checked;
 	var hasUpper = uppercaseEl.checked;
 
-	resultEl.innerText = generatePassword(hasSymbol, hasNumber, hasLower, hasUpper, length);
+	resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 });
 
 // Password generator function

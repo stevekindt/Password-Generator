@@ -1,22 +1,13 @@
 // Put DOM elments here
 
-// Use confirm (Y/N) or prompt (if necessary) to allow user to choose character types
-
-// let includeSpecials = confirm("Would you like to include special characters in your password?");
-
-// alert(includeSpecials);
-
-// let includeNumbers = confirm("Would you like to include numbers in your password?");
-
-// alert(includeNumbers);
-
-// let includeLowers = confirm("Would you like to include lowercase letters in your password?");
-
-// alert(includeLowers);
-
-// let includeUppers = confirm("Would you like to include uppercase letters in your password?");
-
-// alert(includeUppers);
+var resultEl = document.getElementById("result");
+var lengthEl = document.getElementById("length");
+var symbolsEl = document.getElementById("symbols");
+var numbersEl = document.getElementById("numbers");
+var lowercaseEl = document.getElementById("lowercase");
+var uppercaseEl = document.getElementById("uppercase");
+var generateEl = document.getElementById("generate");
+var copyEl = document.getElementById("copy");
 
 alert("Choose which types of characters you'd like to include in your password. Your password must be between 8 and 128 characters.");
 

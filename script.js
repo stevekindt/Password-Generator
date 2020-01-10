@@ -39,6 +39,8 @@ generate.addEventListener("click", () => {
 	resultEl.innerText = generatePassword(hasSymbol, hasNumber, hasLower, hasUpper, length);
 });
 
+// Password generator function
+
 function generatePassword(lower, upper, number, symbol, length) {
 	let generatedPassword = "";
 	const typesCount = lower + upper + number + symbol;
@@ -49,7 +51,7 @@ function generatePassword(lower, upper, number, symbol, length) {
 		return "ERROR! You need to select at least 1 character type to get a password!";
 	}
 
-	// create a loop
+	// Loop to continue character types adding until password length is satisfied
 	for (let i = 0; i < length; i += typesCount) {
 		typesArr.forEach(type => {
 			const funcName = Object.keys(type)[0];

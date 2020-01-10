@@ -6,4 +6,5 @@ Password length and valid character types will be selected via user prompts. The
 https://github.com/stevekindt/Password-Generator
 https://stevekindt.github.io/Password-Generator/
 
+![alt text](https://https://github.com/stevekindt/Password-Generator/blob/master/Screenshot.png)
 

@@ -42,7 +42,10 @@ function copy() {
     let textarea = document.getElementById("result");
     textarea.select();
     document.execCommand("copy");
+    alert("Password copied to clipboard");
   }
+
+
 
 // Ensure that at least one character type is chosen with a check (if/else where else is null?) and alert user to select at least one type
 // List selectable characters in a string or array?

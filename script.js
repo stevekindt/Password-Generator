@@ -20,33 +20,71 @@ var numbers = "0123456789";
 var lowers = "abcdefghijklmnopqrstuvwxyz";
 var uppers = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+const randomFunc = {
+	lower: getRandomLower,
+	upper: getRandomUpper,
+	number: getRandomNumber,
+	symbol: getRandomSymbol
+}
+
+// Event listener upon click to verify checked character types
+
+generate.addEventListener("click", () => {
+	var length = +lengthEl.value;
+	var hasSymbol = symbolsEl.checked;
+	var hasNumber = numbersEl.checked;
+	var hasLower = lowercaseEl.checked;
+	var hasUpper = uppercaseEl.checked;
+
+	resultEl.innerText = generatePassword(hasSymbol, hasNumber, hasLower, hasUpper, length);
+});
+
+function generatePassword(lower, upper, number, symbol, length) {
+	let generatedPassword = "";
+	const typesCount = lower + upper + number + symbol;
+	const typesArr = [{ lower }, { upper }, { number }, { symbol }].filter(item => Object.values(item)[0]);
+
+	// Doesn't have any character types selected
+	if (typesCount === 0) {
+		return "ERROR! You need to select at least 1 character type to get a password!";
+	}
+
+	// create a loop
+	for (let i = 0; i < length; i += typesCount) {
+		typesArr.forEach(type => {
+			const funcName = Object.keys(type)[0];
+			generatedPassword += randomFunc[funcName]();
+		});
+	}
+
+	const finalPassword = generatedPassword.slice(0, length);
+
+	return finalPassword;
+}
+
 // Functions to get random characters from strings
 
 function getRandomSymbol() {
-    return symbols[Math.floor(Math.random() * symbols.length)];
+	return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
 function getRandomNumber() {
-    return numbers[Math.floor(Math.random() * numbers.length)];
+	return numbers[Math.floor(Math.random() * numbers.length)];
 }
 
 function getRandomLower() {
-    return lowers[Math.floor(Math.random() * lowers.length)];
+	return lowers[Math.floor(Math.random() * lowers.length)];
 }
 
 function getRandomUpper() {
-    return uppers[Math.floor(Math.random() * uppers.length)];
+	return uppers[Math.floor(Math.random() * uppers.length)];
 }
 
+// Copy to clipboard function and alert to user
+
 function copy() {
-    let textarea = document.getElementById("result");
-    textarea.select();
-    document.execCommand("copy");
-    alert("Password copied to clipboard");
-  }
-
-
-
-// Ensure that at least one character type is chosen with a check (if/else where else is null?) and alert user to select at least one type
-// List selectable characters in a string or array?
-// Maybe password output is defaulted to "Your Secure Password" as text and it's replaced with the password generated upon event? Need to use preventDefault in that case?
+	let textarea = document.getElementById("result");
+	textarea.select();
+	document.execCommand("copy");
+	alert("Password copied to clipboard");
+}

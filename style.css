@@ -50,5 +50,7 @@ h1, h4 {
     margin: 10px 0;
 }
 
-
-/* Make sure to apply styling including a box, horizontal lines to separate inner password-generate box, and button styling */
+#generate {
+    background-color: red;
+    color: white;
+}
